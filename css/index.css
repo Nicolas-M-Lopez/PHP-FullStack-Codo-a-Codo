@@ -1,0 +1,148 @@
+.row{   /* Correccion por problemas de bootstrap */
+    --bs-gutter-x: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{    /* Propiedades del Navbar */
+    background-color: rgb(58, 58, 58);
+    padding: 0;
+}
+
+.imagenNav{
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.imagenNav span{
+    color: white;
+}
+
+.listaNav{
+    width: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.listaNav li{
+    list-style: none;
+}
+
+.listaNav a{
+    color: white;
+}
+
+.listaNav .tickets{
+    color: rgb(33, 192, 33);
+}
+
+.cardIntroduccion{      /* Propiedades del main */
+    border-radius: 0;
+}
+
+.introduccion div{  
+    width: 40%;
+}
+
+.introduccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 70px;
+}
+
+.marginCards{
+    margin-right: 2vh;
+}
+
+.lenguajes{
+    padding-top: 20px;
+}
+
+.text-bg-info{
+    color: white!important;
+}
+
+.cardDescripcion{
+    padding-top: 0px;
+}
+
+.gridCards{
+    width: 80%;
+}
+
+.flexCards{
+    display: flex;
+    justify-content: center;
+}
+
+.gridLugar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cardLugar{
+    color: white;
+    background-color: rgb(68, 68, 68);
+}
+
+.gridForm{
+    width: 70%;
+}
+
+.flexForm{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.inputs{
+    margin-right: 2vh;
+}
+
+.textForm{
+    margin-top: 1vh;
+}
+
+.Send{
+    width: 100%;
+    background-color: rgb(126, 189, 32);
+}
+
+
+.Footer{        /* Propiedades del footer */
+    background-color: rgb(12, 106, 129);
+    height: 7vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.listaFoot{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.listaFoot li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 10vh;
+    font-size: 1.5vh;
+}
+
+.listaFoot a{
+    text-decoration: none;
+    color: white;
+}
