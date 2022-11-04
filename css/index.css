@@ -177,10 +177,59 @@ a{
     align-items: center;
     list-style: none;
     width: 10vh;
-    font-size: 1.5vh;
+    font-size: 1.7vh;
 }
 
 .listaFoot a{
     text-decoration: none;
     color: white;
+}
+
+/* Propiedades de la pagina de tickets */
+.contenedorTickets{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.cardDescuento{
+    margin: 10px;
+    --bs-card-border-width: 2px;
+}
+
+.campoNombre{
+    width: 98%;
+}
+
+.cantidad{
+    width: 98%;
+}
+
+.valor{
+    display: flex;
+    align-items: center;
+    background-color: rgb(111, 197, 223);
+    height: 7vh;
+    padding-left: 15px;
+    border-radius: 2px;
+}
+
+.reset{
+    width: 95%;
+}
+
+.resumen{
+    width: 95%;
+}
+
+.bodyTickets{
+    position: relative;
+    padding-bottom: 17vh;
+    min-height: 100vh;
+}
+
+.footerTickets{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
