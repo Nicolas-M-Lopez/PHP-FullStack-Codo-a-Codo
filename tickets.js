@@ -6,6 +6,7 @@ const apellido = document.querySelector('.campoApellido');
 const correo = document.querySelector('.campoCorreo');
 const form = document.getElementById('form');
 const inputs = document.querySelectorAll('#form input');
+const cantidad = document.querySelector('.campoCantidad');
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
@@ -13,6 +14,7 @@ form.addEventListener('submit', e =>{
     validarNombre();
     validarApellido();
     validacionCorreo();
+    validarCantidad();
     const ticketDescuento = document.getElementById('inputCategoria').value;
     const entrada = valorEntrada(ticketDescuento);
     const precioTotal = calculoTotal(entrada);
@@ -25,9 +27,8 @@ const valorEntrada = (descuento) =>{
 }
 
 const calculoTotal = (precio) =>{
-    const ticketCantidad = document.querySelector('.cantidad').value;
+    const ticketCantidad = cantidad.value;
     const total = ticketCantidad * precio;
-    console.log(total);
     return total;
 }
 
@@ -42,7 +43,6 @@ botonReset.addEventListener('click', () =>{
 
 const validacionCorreo = () =>{
     regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    console.log(regexEmail.test(correo.value))
     if(!regexEmail.test(correo.value)){
         Swal.fire({
             title: 'Mail invalido',
@@ -70,4 +70,14 @@ function validarApellido(){
           })
     }
   
+}
+
+function validarCantidad(){
+    if(cantidad.value <= 0){
+        Swal.fire({
+            title: 'Cantidad invalido',
+            confirmButtonText: 'Okey',
+            icon: 'error'
+          })
+    }
 }
